@@ -1,0 +1,140 @@
+1.Write a Python program to count the occurrences of each word in a given sentence.
+
+program:
+s=input("enter the sentence")
+f={}
+word=s.split()
+for i in word:
+    if i in f:
+        f[i]+=1
+    else:
+        f[i]=1
+print(f)
+
+output:
+enter the sentencei love love python
+{'i': 1, 'love': 2, 'python': 1}
+
+
+
+2.Write a Python program to remove duplicates from a list.
+
+program:
+
+s=[78,98,99,9,99,56,48,87,87,]
+li=[]
+for h in s:
+    if h not in li:
+        li.append(h)
+print(li)
+
+output:
+
+enter the sentencei love love python
+[78, 98, 99, 9, 56, 48, 87]
+
+
+3.Write a Python program to count the number of elements in a list within a specified range.
+
+program:
+
+l=int(input("Enter lower range"))
+r=int(input("Enter higher range"))
+list=[40,46,48,66,78,90,34,63,100,101]
+c=0
+for i in list:
+    if i>l and i<r:
+        c+=1
+print(c)
+
+output:
+
+Enter lower range40
+Enter higher range70
+4 
+
+
+3.Write a Python program to count the number of elements in a list within a specified range.
+
+program:
+
+l=int(input("Enter lower range"))
+r=int(input("Enter higher range"))
+list=[40,46,48,66,78,90,34,63,100,101]
+c=0
+for i in list:
+    if i>l and i<r:
+        c+=1
+print(c)
+
+output:
+
+Enter lower range40
+Enter higher range70
+4 
+
+
+
+5.Write a Python program to find the highest 3 values in a dictionary
+
+program:
+
+from heapq import nlargest
+di = {'a':500, 'b':5874, 'c': 560,'d':400, 'e':5874, 'f': 20}  
+lar = nlargest(3, di, key=di.get)
+print(lar) 
+
+output:
+['b', 'e', 'c']
+
+
+6.Write a Python program to convert a tuple to a string.
+
+program:
+
+tup=('p','y','t','h','o','n')
+str=''.join(tup)
+print(str)
+tup=('p','y','t','h','o','n')
+str=''.join(tup)
+print(str)
+​
+output:
+
+python
+
+
+7.Write a Python program to reverse a tuple.
+
+program:
+
+tup=('p','y','t','h','o','n')
+print(tup[::-1])
+
+output:
+
+('n', 'o', 'h', 't', 'y', 'p')
+
+
+8.Write a Python program to remove existing indentation from all of the lines in a given text.
+
+program:
+
+import textwrap
+sample_text = ''' 
+    Python is a widely used high-level, general-purpose, interpreted, 
+    dynamic programming language. Its design philosophy emphasizes 
+    code readability, and its syntax allows programmers to express 
+    concepts in fewer lines of code than possible in languages such 
+    as C++ or Java. 
+    ''' 
+t=textwrap.dedent(sample_text)
+print(t)
+​
+output:
+
+Python is a widely used high-level, general-purpose, interpreted, 
+dynamic programming language. Its design philosophy emphasizes 
+code readability, and its syntax allows programmers to express 
+concepts in fewer lines of code than possible in languages such 
+as C++ or Java. 
